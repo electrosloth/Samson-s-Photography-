@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samson Wildlife Photography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #111;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #555;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Samson Wildlife Photography</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section class="gallery" id="gallery">
+    <img src="wildlife1.jpg" alt="Wild Animal 1">
+    <img src="wildlife2.jpg" alt="Wild Animal 2">
+    <img src="wildlife3.jpg" alt="Wild Animal 3">
+    <img src="wildlife4.jpg" alt="Wild Animal 4">
+    <img src="wildlife5.jpg" alt="Wild Animal 5">
+    <img src="wildlife6.jpg" alt="Wild Animal 6">
+  </section>  <footer id="contact">
+    <p>&copy; 2025 Samson Wildlife Photography | Contact: info@samsonwild.com</p>
+  </footer>
+</body>
+</html>
